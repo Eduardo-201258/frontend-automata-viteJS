@@ -1,0 +1,79 @@
+:root {
+    --color-primario: white;
+    --color-texto-:  #1da6e1;
+    --color-texto-hover: #32565f;
+    --color-bg: #082d3d;
+    --bs-body-font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.pie-pagina{
+    width: 100%;
+    background-color: var(--color-bg);
+}
+
+.grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+
+ figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* cambios en el logo */
+.logo{
+    width: 250px;
+}
+
+.title-2{
+     color: white;
+     margin-bottom: 25px;
+     font-size: 20px;
+ }
+
+ .text{
+     color: var(--color-texto-);
+     margin-bottom: 10px;
+ }
+/* sección de iconos */
+ .red-social{
+     display: inline-block;
+     text-decoration: none;
+     width: 45px;
+     height: 45px;
+     line-height: 45px;
+     margin-right: 10px;
+     background-color: #0d2033;
+     text-align: center;
+     transition: all 300ms ease;
+ }
+
+ .grupo-2{
+     background-color: #0a1a2a;
+     padding: 15px 10px;
+     text-align: center;
+     color: white;
+ }
+
+ .small{
+     font-size: 15px;
+ }
+/* parte responsive */
+ @media screen and (max-width:800px) {
+    .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0;
+    }
+ }
